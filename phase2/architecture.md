@@ -386,21 +386,65 @@ At a 2-week build window (May 18–31), this requires approximately 5 hours per 
 
 ---
 
-## 9. How OpenClaw Plugs In
+## 9. Orchestration Substrate Options
 
-[OpenClaw](https://www.privacy.com/blog/openclaw-ai-agent-spending-virtual-card) is Erick's AI orchestration platform. The Phase 2 architecture is designed to be compatible with OpenClaw as the agent substrate, though Phase 2 uses a custom runtime loop by default. Plugging OpenClaw in replaces the custom runtime loop (Section 3) with OpenClaw's native agent execution engine.
+The Phase 2 backend is deliberately substrate-agnostic. The Supabase data model, Privacy.com webhook ingestion, revenue platform webhooks, safety layer, and operator dashboard are all data infrastructure that work with any agent runtime. What varies is **the runtime loop itself** — how each agent plans, calls tools, manages memory, and executes its daily and weekly ticks.
 
-Specifically:
+The 2026 landscape gives each AI multiple viable runtime options, and the experiment's integrity does not require all three agents to run on the same substrate. In fact, fairness arguably points the other way: each AI should run on the substrate that best surfaces its native capability, just as a human operator would pick the best tool for the job. The leaderboard discloses each agent's substrate publicly for transparency.
 
-**What gets replaced:** The daily tick's Plan → Execute → Reflect cycle. Instead of the custom GitHub Actions workflow calling the agent API directly, OpenClaw manages the agent session, tool calls, and memory — and the Phase 2 backend becomes a pure data store and webhook receiver.
+### Substrate menu
 
-**What stays the same:** The Supabase data model, the Privacy.com webhook ingestion, the revenue platform webhooks, the safety layer, and the operator dashboard. These are all data infrastructure, not execution infrastructure, and remain unchanged.
+#### Native AI platforms (model-tied)
 
-**Integration point:** A single API endpoint `POST /api/agent/execute` that accepts an agent ID, tick type, and context payload. The current implementation calls the model API directly from this endpoint. The OpenClaw integration replaces the body of this function with an OpenClaw session call.
+Each competitor has a first-party harness purpose-built around its own model:
 
-**Why this matters for OpenClaw:** This experiment is a natural proving ground for OpenClaw's orchestration capabilities in a real, economically meaningful context. If OpenClaw can manage three concurrent agent sessions with different tool surfaces, different memory contexts, and hard financial constraints — and produce verifiable economic outcomes — that is a stronger demonstration of the platform's capabilities than any synthetic benchmark.
+- **[Perplexity Computer](https://www.perplexity.ai/hub/blog/introducing-perplexity-computer)** — Launched February 2026. A general-purpose digital worker that orchestrates 19+ frontier models inside isolated compute environments with real browser, filesystem, and tool integrations. Native sub-agent spawning, long-horizon workflows (hours to days), and a [model-agnostic harness](https://www.perplexity.ai/hub/blog/everything-is-computer) — Opus 4.6 for reasoning, Gemini for deep research, ChatGPT 5.2 for long-context recall, Nano Banana for images, Veo 3.1 for video. Best fit when Perplexity is the competitor, because Computer is Perplexity's own orchestration layer.
+- **[Claude Agent SDK + Claude Code](https://www.anthropic.com/news/3-5-models-and-computer-use)** — Anthropic published its Agent SDK alongside Claude 4.6 in 2026. Strong for code-generating agents, computer-use workflows, and structured reasoning. Claude Code is the de facto choice for developer-focused agents and is the natural runtime when Claude is the competitor. Heavily referenced in the [2026 Agentic Coding Trends Report](https://resources.anthropic.com/hubfs/2026%20Agentic%20Coding%20Trends%20Report.pdf).
+- **[OpenAI Agents SDK](https://openai.com/index/the-next-evolution-of-the-agents-sdk/)** — Updated April 2026 with a model-native harness, configurable memory, Codex-like filesystem tools, and native sandbox execution. Supports Blaxel, Cloudflare, Daytona, E2B, Modal, Runloop, and Vercel as sandbox backends. The natural runtime when ChatGPT is the competitor. [ChatGPT agent mode](https://openai.com/index/introducing-chatgpt-agent/) on the consumer side gives the same model the same browser-and-tools experience.
 
-The [Privacy.com / OpenClaw guide](https://www.privacy.com/blog/openclaw-ai-agent-spending-virtual-card) covers the basic integration pattern. Phase 2 extends it with multi-agent coordination, observability, and the revenue tracking infrastructure.
+#### Cross-AI / open frameworks (model-agnostic)
+
+These run any model through a uniform orchestration layer. Useful for the experiment's shared infrastructure — the parts that monitor, log, and coordinate across all three agents — or for comparing how a given AI performs under a neutral substrate:
+
+- **[OpenClaw](https://www.privacy.com/blog/openclaw-ai-agent-spending-virtual-card)** — An open-source orchestration approach Privacy.com documented for long-running autonomous workflows that spend through virtual cards. Useful reference architecture if a fork wants a coordination layer purpose-built around the Privacy.com payment rail this experiment uses.
+- **[Hermes Agent](https://blogs.nvidia.com/blog/rtx-ai-garage-hermes-agent-dgx-spark/)** — NVIDIA-backed open-source self-improving agent framework, [highlighted in May 2026](https://www.tencentcloud.com/techpedia/144032) as the most architecturally aligned open-source choice for 24/7 background agents that get smarter over time. Strong fit for the long-horizon residual-income context of this experiment.
+- **[LangGraph](https://gurusup.com/blog/best-multi-agent-frameworks-2026)** — Directed-graph orchestration with conditional edges and state management. Highest control, steepest learning curve. Best when the agent's logic needs to be auditable and replayable.
+- **[CrewAI](https://gurusup.com/blog/best-multi-agent-frameworks-2026)** — Role-based orchestration (sequential, hierarchical, or consensual processes). The second-most-popular framework. Good fit if any agent's business model benefits from a defined "team" of sub-agents (researcher, writer, marketer).
+- **[AutoGen / AG2](https://gurusup.com/blog/best-multi-agent-frameworks-2026)** — Microsoft's conversational multi-agent framework with GroupChat coordination. Useful for debate-style refinement loops.
+- **[Google Agent Development Kit (ADK)](https://gurusup.com/blog/best-multi-agent-frameworks-2026)** — Released April 2026. Hierarchical agent tree. Strong if any agent wants tight coupling to Google services.
+
+### Substrate selection rules for this experiment
+
+To keep the comparison honest, the substrate each agent runs on must follow these rules:
+
+1. **Each agent picks one primary substrate at experiment start** and discloses it on the leaderboard. The choice is published in week 0 alongside each pitch.
+2. **Substrate may be changed mid-experiment** only at a weekly checkpoint, with the change logged. No changes mid-week.
+3. **The default recommendation: each agent on its own native platform.** Perplexity on Perplexity Computer, Claude on the Claude Agent SDK (with Claude Code where coding is involved), ChatGPT on the OpenAI Agents SDK (with ChatGPT agent mode for browser tasks). This produces the most credible head-to-head because no agent is artificially handicapped by running on a substrate that downgrades its native capability.
+4. **Cross-substrate use is allowed.** If Claude's strategy requires CrewAI-style multi-role coordination, Claude can run inside CrewAI as long as Claude is the underlying model. The substrate is a wrapper; the model identity is what's being tested.
+5. **Shared coordination layer:** The operator-facing layer that sits above all three agents — daily digests, kill switch, weekly recap generation, leaderboard updates — runs on the Phase 2 backend (Node.js + Supabase + Vercel) described above. It is substrate-neutral and never makes competitive decisions for any agent.
+
+### Integration contract
+
+Whatever substrate each agent uses, it must implement a thin contract so the Phase 2 backend can coordinate fairly:
+
+```
+POST /api/agent/{id}/tick
+  body: { tick_type: "daily" | "weekly_checkpoint", context: {...} }
+  response: { decisions: [...], tool_calls: [...], memory_updates: [...] }
+
+POST /api/agent/{id}/spend
+  body: { amount_cents, merchant, category, justification }
+  response: { approved: bool, transaction_id }
+
+POST /api/agent/{id}/report-revenue
+  body: { amount_cents, source, type: "one_time" | "recurring" }
+```
+
+Any of the substrates above can satisfy this contract — the agent's native loop happens inside the substrate, then the substrate emits the standardized events that Supabase ingests. This is what makes the Phase 2 backend genuinely substrate-agnostic.
+
+### Why this matters
+
+The substrate question is itself part of the experiment's signal. If Perplexity wins with Perplexity Computer's 19-model orchestration but Claude only had its native SDK available, that tells us something different than if all three ran on the same neutral framework. By publishing each agent's substrate choice and allowing one mid-stream change, the experiment captures both pure model performance and the strategic question of "which harness does each AI deploy itself best in?" — which is the real question operators face in 2026.
 
 ---
 
@@ -408,5 +452,13 @@ References:
 - [Virtual Cards for AI — Privacy.com Agents](https://agents.privacy.com)
 - [Virtual Cards for Agentic Payments: An OpenClaw Guide — Privacy.com, February 2026](https://www.privacy.com/blog/openclaw-ai-agent-spending-virtual-card)
 - [Agent Card Payments Compared — Crossmint, April 2026](https://www.crossmint.com/learn/agent-card-payments-compared)
+- [Introducing Perplexity Computer — Perplexity, February 2026](https://www.perplexity.ai/hub/blog/introducing-perplexity-computer)
+- [Everything is Computer — Perplexity, March 2026](https://www.perplexity.ai/hub/blog/everything-is-computer)
+- [The Next Evolution of the Agents SDK — OpenAI, April 2026](https://openai.com/index/the-next-evolution-of-the-agents-sdk/)
+- [Introducing ChatGPT Agent — OpenAI, July 2025](https://openai.com/index/introducing-chatgpt-agent/)
+- [2026 Agentic Coding Trends Report — Anthropic](https://resources.anthropic.com/hubfs/2026%20Agentic%20Coding%20Trends%20Report.pdf)
+- [Hermes Agent on NVIDIA RTX — NVIDIA, May 2026](https://blogs.nvidia.com/blog/rtx-ai-garage-hermes-agent-dgx-spark/)
+- [Best Open Source AI Agents in 2026 — Tencent Cloud, April 2026](https://www.tencentcloud.com/techpedia/144032)
+- [Best Multi-Agent Frameworks in 2026 — GuruSup, May 2026](https://gurusup.com/blog/best-multi-agent-frameworks-2026)
 - [Supabase Documentation](https://supabase.com/docs)
 - [Vercel Documentation](https://vercel.com/docs)

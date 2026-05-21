@@ -69,17 +69,15 @@ Day 4: Set up all platform accounts — Etsy seller account, Redbubble account, 
 
 Day 5–7: List all 30 products across platforms with optimized titles, descriptions, and tags. Add products to Redbubble (no listing fee). Publish 10 digital download products on Gumroad (no listing fee). Pinterest board created and first 10 pins posted.
 
-Budget used this week: $6 (30 Etsy listings at $0.20 each). $4 held in reserve.
+Budget used this week: $14 (domain + 30 Etsy listings at $0.20 each). $36 held in reserve for paid promotion and mockup tools.
 
 ### Week 2 (June 9–15): Catalog expansion
 
 Generate and list 30 more products. Total catalog: 60 products across platforms. Analysis of any early impressions data from Etsy (Etsy's Shop Manager shows impressions within 24 hours of listing). Adjust keyword strategy based on which listings are getting impressions vs. which are not.
 
-Budget used: $6 more Etsy listings = total $12 spent, but $2 net cash flow is absorbed by first sales. The $4 reserve covers the overage. Alternative: list only 20 more items this week ($4) to stay within the $10 total budget, leaving no reserve. This is the decision point: aggressive catalog growth vs. financial buffer.
+Budget used: $4 more Etsy listings (20 items). Total hard spend so far: $18. Activate the $20 paid promotion allocation this week: $10 toward Etsy Offsite Ads, $10 toward Pinterest Promoted Pins. Mockup tool subscription ($10) activated this week for thumbnail upgrades. Total Etsy listings: 50. Total Redbubble listings: 50+ (no fee). Total Gumroad listings: 15.
 
-Decision: List 20 new items this week ($4) to stay within budget. The reserve is gone. Total Etsy listings: 50. Total Redbubble listings: 50+ (no fee). Total Gumroad listings: 15.
-
-Total budget used: $10.00 (50 Etsy listings at $0.20 each, all on the card by end of week 2).
+Total hard spend through week 2: $48.00 ($14 domain+listings week 1 + $4 additional listings + $20 paid promotion + $10 mockups). $2 contingency reserve remaining.
 
 ### Week 3 (June 16–22): First revenue
 
@@ -101,9 +99,9 @@ The Etsy algorithm rewards active shops (frequent new listings, consistent sales
 
 Redbubble catalog is fully indexed by week 6–7. Pinterest referral traffic increases as pins age and accumulate saves.
 
-Week 5 target: $90 MRR
-Week 6 target: $120 MRR
-Week 7 target: $150 MRR
+Week 5 target: $110 MRR
+Week 6 target: $140 MRR
+Week 7 target: $160 MRR
 Week 8 target: $180 MRR
 
 ### Weeks 9–11 (July 28 – August 17): Holiday preview and seasonal push
@@ -113,32 +111,33 @@ This period falls in late July and early August — not a seasonal peak for most
 Second initiative: launch one premium digital product bundle on Gumroad — a collection of 20 high-resolution printable files at $29 (vs. individual listings at $4–$7 each). Bundle products perform well on Gumroad because the perceived value is clear.
 
 Week 9 target: $200 MRR
-Week 10 target: $220 MRR
-Week 11 target: $240 MRR
+Week 10 target: $210 MRR
+Week 11 target: $220 MRR
 
 ### Week 12 (August 17–23): Final inventory audit
 
 Count all platform balances. Verify Etsy payment processing schedule (Etsy deposits on a schedule — ensure all eligible revenue is included in the checkpoint count). Verify Redbubble payout status. Final Pinterest push for top-performing products.
 
-Revenue target: $250–$280 MRR. One-time Gumroad bundle revenue may add $50–$100.
+MRR target at week 12: **$80–$200 MRR** (volume play; paid promotion in weeks 1–2 accelerates the review flywheel). One-time Gumroad bundle revenue may add $50–$100 on top.
 
 ---
 
-## Exact $10 Budget Deployment
+## Exact $50 Budget Deployment
 
 | Item | Cost | Notes |
 |---|---|---|
-| Etsy listing fees (50 listings at $0.20) | $10.00 | Primary expense; Etsy charges $0.20/listing |
+| Domain + Etsy listing fees (50 listings at $0.20) | $14.00 | ~$4 domain on Namecheap + $10 Etsy listing fees |
+| Paid Etsy / Pinterest promotion | $20.00 | Etsy Offsite Ads credit + Pinterest Promoted Pins to drive early traffic |
+| Stock assets / mockup tools | $10.00 | Placeit or Mockup World subscription for professional product mockups |
 | Redbubble listings | $0 | No listing fee |
 | Gumroad listings | $0 | No listing fee; 10% transaction fee from revenue |
 | Image generation (DALL-E / GPT-4o) | $0 | Native capability |
 | Pinterest account | $0 | Free |
 | Instagram account | $0 | Free |
-| Domain | $0 | Using Etsy and platform stores, no standalone domain needed |
-| Reserve | $0 | Fully spent on listings |
-| Total | $10.00 | |
+| Contingency | $6.00 | Unexpected platform fees or relisting costs |
+| Total | $50.00 | |
 
-This is a zero-reserve budget. The risk is that no revenue arrives before the listing fees are fully spent. However, Etsy listing fees are sunk from day one — there is no iterative spending decision to make after week 2. The model is "pay once to list, then earn."
+With $50, paid promotion becomes viable. The Etsy Offsite Ads credit and Pinterest Promoted Pins run during weeks 1–4 to accelerate the shop's review history. Once 10–20 reviews are in place, organic Etsy search takes over and paid spend stops. Mockup tools dramatically improve thumbnail quality, which is the single highest-impact conversion lever in Etsy search.
 
 ---
 
@@ -146,22 +145,22 @@ This is a zero-reserve budget. The risk is that no revenue arrives before the li
 
 | Week | Etsy/Redbubble Sales | Gumroad Sales | Platform Fees (est.) | Net Revenue | Cash on Hand |
 |---|---|---|---|---|---|
-| 1 | $0 | $0 | — | -$6.00 | $4.00 |
-| 2 | $5 | $0 | $0.50 | -$5.50 | -$1.50 (covered by reserve) |
-| 3 | $30 | $5 | $3.50 | $31.50 | $30.00 |
-| 4 | $60 | $10 | $7.00 | $63.00 | $93.00 |
-| 5 | $80 | $5 | $8.50 | $76.50 | $169.50 |
-| 6 | $100 | $5 | $10.50 | $94.50 | $264.00 |
-| 7 | $120 | $5 | $12.50 | $112.50 | $376.50 |
-| 8 | $140 | $5 | $14.50 | $130.50 | $507.00 |
-| 9 | $150 | $35 (bundle launch) | $18.50 | $166.50 | $673.50 |
-| 10 | $160 | $10 | $17.00 | $153.00 | $826.50 |
-| 11 | $170 | $10 | $18.00 | $162.00 | $988.50 |
-| 12 | $180 | $10 | $19.00 | $171.00 | $1,159.50 |
+| 1 | $0 | $0 | — | -$14.00 | -$14.00 |
+| 2 | $10 | $0 | $1.00 | -$39.00 (paid promo activated) | -$39.00 |
+| 3 | $40 | $5 | $4.50 | $40.50 | $1.50 |
+| 4 | $70 | $10 | $8.00 | $72.00 | $73.50 |
+| 5 | $90 | $5 | $9.50 | $85.50 | $159.00 |
+| 6 | $110 | $5 | $11.50 | $103.50 | $262.50 |
+| 7 | $130 | $5 | $13.50 | $121.50 | $384.00 |
+| 8 | $150 | $5 | $15.50 | $139.50 | $523.50 |
+| 9 | $160 | $35 (bundle launch) | $19.50 | $175.50 | $699.00 |
+| 10 | $165 | $10 | $17.50 | $157.50 | $856.50 |
+| 11 | $175 | $10 | $18.50 | $166.50 | $1,023.00 |
+| 12 | $185 | $10 | $19.50 | $175.50 | $1,198.50 |
 
 Platform fees estimated at: Etsy 6.5% transaction fee + 3% payment processing + $0.20 renewal per sale; Redbubble margin ~20% of sale price (already in the "net" column via lower revenue per unit); Gumroad 10%.
 
-Downside scenario: Etsy algorithm does not surface listings effectively, week 12 sales are $40–$60/month. In this case, cash on hand at week 12 would be approximately $200–$300. This is still cash-positive on a $10 budget.
+Downside scenario: paid promotion ROI is poor and Etsy algorithm underperforms, week 12 MRR is $80–$120. Cash on hand at week 12 would be approximately $200–$300. Still cash-positive on a $50 budget.
 
 ---
 
@@ -185,4 +184,4 @@ The second risk is design quality. DALL-E and GPT-4o can produce excellent image
 
 References:
 - [What Happened With HustleGPT — The Hustle, April 2023](https://thehustle.co/04172023-what-happened-with-hustlegpt)
-- [Virtual Cards for Agentic Payments: An OpenClaw Guide — Privacy.com, February 2026](https://www.privacy.com/blog/openclaw-ai-agent-spending-virtual-card)
+- [Virtual Cards for AI — Privacy.com Agents](https://agents.privacy.com)

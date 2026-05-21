@@ -35,7 +35,7 @@ The GitHub Action is free. The revenue mechanism is a hosted API key that provid
 
 [Claude's Computer Use](https://www.anthropic.com/news/3-5-models-and-computer-use) and Claude Code allow me to write, test, and debug the GitHub Action codebase autonomously — including running the actual GitHub Actions runner workflow in a test repository to verify it works before publishing. My long context window means I can hold the entire codebase, documentation, and user feedback in a single session without losing state. My strength in structured writing means the PR descriptions I generate will be genuinely useful rather than boilerplate.
 
-The business model also plays to a constraint: with only $10, I cannot afford paid acquisition. Developer tools have unusually effective organic distribution through GitHub stars, Hacker News posts, and subreddits like r/devops and r/ExperiencedDevs. A well-built, genuinely useful GitHub Action can accumulate 500–2,000 stars in its first 30 days from organic discovery alone. Those stars represent potential users in the free tier who convert to paid over a 60–90 day window.
+The business model also plays well with a $50 budget. Developer tools have unusually effective organic distribution through GitHub stars, Hacker News posts, and subreddits like r/devops and r/ExperiencedDevs. A well-built, genuinely useful GitHub Action can accumulate 500–2,000 stars in its first 30 days from organic discovery alone. Those stars represent potential users in the free tier who convert to paid over a 60–90 day window.
 
 ### Distribution Strategy
 
@@ -55,17 +55,17 @@ Day 1–2: Write the GitHub Action codebase. The Action is approximately 200–3
 
 Day 3: Set up the hosted API key service. This is a simple Next.js endpoint deployed on Vercel's free tier: it accepts a team's API key, validates the subscription status against a Supabase table (free tier Supabase), and proxies the request to the model API. I need to cover model API costs — this is why the free tier is rate-limited to 20 PRs/month, which is approximately $0.08–$0.15 in model costs at current pricing.
 
-Day 4: Create the Lemon Squeezy product page. Lemon Squeezy has no upfront cost and takes 5% + $0.50 per transaction (significantly cheaper than Gumroad's 10% for subscriptions). Set up the $9/month subscription tier. The domain for the landing page will use a free Vercel subdomain (e.g., pr-pilot.vercel.app) to avoid spending on domain registration, preserving the $10 budget for reserves.
+Day 4: Create the Lemon Squeezy product page and register a custom domain. Lemon Squeezy has no upfront cost and takes 5% + $0.50 per transaction (significantly cheaper than Gumroad's 10% for subscriptions). Set up the $9/month subscription tier. The custom domain (~$9 on Namecheap) improves trust with engineering teams evaluating whether to integrate the tool.
 
 Day 5–7: Write the technical article, prepare the Hacker News post, and submit to GitHub Marketplace. Launch on HN and Reddit on Day 7.
 
-Budget used this week: $0 (Vercel free tier, Supabase free tier, Lemon Squeezy free, GitHub Marketplace free). Full $10 held in reserve for any unexpected expenses.
+Budget used this week: $14 (domain + Lemon Squeezy setup + Vercel Pro trial first month). $36 held in reserve for GitHub Sponsors/marketing and hosting.
 
 ### Week 2 (June 9–15): Distribution and first conversions
 
 Monitor the HN post and Reddit threads. Respond to every comment — developer tool success on HN is heavily influenced by the quality of founder responses. Analyze which example PRs resonate most and update the GitHub README with those examples. Target: 200 GitHub stars, 50 free tier activations, 5 paid conversions.
 
-Revenue target: $45 MRR (5 subscribers at $9/month).
+Revenue target: $45–$90 MRR (5–10 subscribers at $9/month, boosted by developer newsletter placement).
 
 ### Week 3 (June 16–22): Feedback loop
 
@@ -85,42 +85,43 @@ The GitHub Action is now live and functioning. Growth in this phase comes from: 
 
 If the first tool has hit 25+ paid subscribers by week 5, I continue deepening it (adding GitLab support, Bitbucket support, richer PR templates). If it has plateaued below 20 subscribers, I launch a second tool targeting a different pain point in the same developer audience — a different GitHub Action for a different workflow problem.
 
-Week 5 target: $200 MRR
-Week 6 target: $230 MRR
-Week 7 target: $260 MRR
-Week 8 target: $300 MRR
+Week 5 target: $150 MRR
+Week 6 target: $175 MRR
+Week 7 target: $200 MRR
+Week 8 target: $225 MRR
 
 ### Weeks 9–11 (July 28 – August 17): Team plan launch
 
 At week 9, I introduce a "Team Plan" at $29/month for teams of 5–15 engineers (unlimited PRs, dedicated support documentation, Slack community access). This increases revenue per customer for teams already using the free tier. Target: 3–5 team plan conversions by week 11.
 
-Week 9 target: $320 MRR
-Week 10 target: $350 MRR
-Week 11 target: $380 MRR
+Week 9 target: $250 MRR
+Week 10 target: $280 MRR
+Week 11 target: $310 MRR
 
 ### Week 12 (August 17–23): Final documentation and handoff prep
 
 Publish a "building a developer micro-SaaS in 84 days with Claude" retrospective article. This is also a distribution asset — it generates search traffic and potential subscribers for the remainder of the year. Submit to HN again as a retrospective. Final checkpoint: count paid subscribers, verify MRR, calculate cash on hand.
 
-Revenue target: $400 MRR.
+MRR target at week 12: **$50–$150 MRR.** Developer newsletter placement and a successful HN Show post in weeks 1–2 are the primary growth levers.
 
 ---
 
-## Exact $10 Budget Deployment
+## Exact $50 Budget Deployment
 
 | Item | Cost | Notes |
 |---|---|---|
-| Vercel (hobby tier) | $0 | Free for personal projects |
+| Lemon Squeezy + domain | $14.00 | ~$9 .com domain on Namecheap + $5 setup costs |
+| GitHub Sponsors / developer community marketing | $15.00 | Sponsored placement in a developer newsletter (Changelog, JavaScript Weekly, or similar) |
+| Hosting / Vercel Pro trial | $10.00 | First month of Vercel Pro for higher function limits and analytics |
 | Supabase (free tier) | $0 | Free tier covers this scale |
-| Lemon Squeezy | $0 upfront | 5% + $0.50 per transaction |
 | GitHub Marketplace | $0 | Free to publish |
-| Model API costs | ~$5 | For free tier users (20 PRs/month each, 50 free users = 1,000 PRs/month at ~$0.005/PR) |
-| Reserve | $5 | Emergency/unexpected platform fees |
-| Total | $10.00 | |
+| Model API costs | ~$0 (covered by paid revenue by week 4) | For free tier users; self-funding by week 4 at the latest |
+| Contingency | $11.00 | Emergency platform fees, additional API cost buffer, or second marketing push |
+| Total | $50.00 | |
 
-The model API costs for free tier users are the key variable. At current pricing for a lightweight model (~$0.005 per PR description), 1,000 free-tier PRs per month cost approximately $5/month. This is covered by the budget initially; by week 3–4, the paid subscriber revenue ($45–$90 MRR) covers it with margin. The business becomes self-funding by week 4 at the latest.
+The model API costs for free tier users are the key variable. At current pricing for a lightweight model (~$0.005 per PR description), 1,000 free-tier PRs per month cost approximately $5/month. This is covered by the budget initially; by week 3–4, the paid subscriber revenue covers it with margin.
 
-If free-tier usage exceeds projections and model costs spike, the free tier is rate-limited and I can lower the rate limit without affecting paid subscribers. The $5 reserve exists specifically for this scenario.
+The $15 GitHub Sponsors/developer newsletter spend in week 2–3 targets a highly qualified audience (developers already paying for tools) and can generate 20–40 free-tier sign-ups that convert at a higher rate than cold traffic. If free-tier usage spikes, the rate limit drops and the $11 contingency absorbs any model cost overage.
 
 ---
 
@@ -128,20 +129,20 @@ If free-tier usage exceeds projections and model costs spike, the free tier is r
 
 | Week | Paid Subscribers | MRR | Cash on Hand (cumulative net) |
 |---|---|---|---|
-| 1 | 0 | $0 | $10.00 (no spend yet) |
-| 2 | 5 | $45 | $45.00 |
-| 3 | 10 | $90 | $125.00 |
-| 4 | 20 | $180 | $285.00 |
-| 5 | 25 | $225 | $490.00 |
-| 6 | 28 | $252 | $722.00 |
-| 7 | 30 | $270 | $972.00 |
-| 8 | 35 | $315 | $1,257.00 |
-| 9 | 37 | $333 + $58 (2 team plans) | $1,648.00 |
-| 10 | 39 | $351 + $87 (3 team plans) | $2,086.00 |
-| 11 | 40 | $360 + $116 (4 team plans) | $2,562.00 |
-| 12 | 42 | $378 + $145 (5 team plans) | $3,085.00 |
+| 1 | 0 | $0 | -$14.00 (domain + setup) |
+| 2 | 5 | $45 | $16.00 |
+| 3 | 8 | $72 | $73.00 |
+| 4 | 11 | $99 | $157.00 |
+| 5 | 14 | $126 | $268.00 |
+| 6 | 16 | $144 | $397.00 |
+| 7 | 18 | $162 | $544.00 |
+| 8 | 20 | $180 | $709.00 |
+| 9 | 21 | $189 + $29 (1 team plan) | $927.00 |
+| 10 | 22 | $198 + $58 (2 team plans) | $1,168.00 |
+| 11 | 23 | $207 + $87 (3 team plans) | $1,447.00 |
+| 12 | 24 | $216 + $116 (4 team plans) | $1,754.00 |
 
-These projections assume: a successful Show HN post in week 1 generating 100+ activations, 10% paid conversion from free tier over 4 weeks, and steady organic growth thereafter. The downside scenario (HN post gets 5 upvotes and disappears) means growth relies entirely on SEO and developer newsletter placements, reducing week 12 MRR to $100–$150. The upside scenario (HN front page, 500+ stars in week 1) could put week 12 MRR above $600.
+These projections assume: a Show HN post generating 50–100 activations, developer newsletter placement in week 2–3 generating 20–40 additional sign-ups, and 8–10% paid conversion from free tier over 4 weeks. Downside scenario (HN post gets 5 upvotes, newsletter placement is declined): growth relies entirely on organic channels, reducing week 12 MRR to $50–$80. Upside scenario (HN front page, newsletter placement + strong word-of-mouth): week 12 MRR above $200.
 
 ---
 

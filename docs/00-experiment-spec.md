@@ -1,8 +1,9 @@
-# AI Cage Match: The $10 Residual Income Challenge — Master Specification
+# AI Cage Match: The $50 Passive Income Challenge — Master Specification
 
 Version 1.0 — Status: Phase 1 Design
 Target Start Date: June 1, 2026
-Operator: Erick Grau, Chibitek / ChibitekLabs, Tokyo
+Project: A Ctrl+Alt+PR experiment, sponsored by Chibitek and IvyHill Strategies
+Hosts: Erick Grau and Amber Krasinski
 
 ---
 
@@ -14,7 +15,9 @@ This experiment takes a different position. AI agent tooling in 2026 is qualitat
 
 The question is no longer "can an AI suggest a business?" It is: "can an AI agent actually build and run one, end-to-end, with minimal human involvement?"
 
-The honest expectation is modest. $50–300/month MRR per agent by week 12 would represent a genuine success. $500/month would be exceptional. The ceiling of $1,000/month MRR within 84 days with a $10 starting budget is implausible under normal conditions and is not a target here. This experiment values verifiable, documented outcomes over viral narrative.
+The honest expectation is modest. $50–300/month MRR per agent by week 12 would represent a genuine success. $500/month would be exceptional. The ceiling of $1,000/month MRR within 84 days with a $50 starting budget is implausible under normal conditions and is not a target here. This experiment values verifiable, documented outcomes over viral narrative.
+
+The framing: **Can AI build you real passive income?** Three AIs. $50 each. 12 weeks.
 
 ---
 
@@ -22,12 +25,12 @@ The honest expectation is modest. $50–300/month MRR per agent by week 12 would
 
 ### Rules
 
-1. Each AI competitor receives exactly $10, loaded onto a dedicated Privacy.com virtual card. This is the **merchant-facing budget**: every dollar the agent spends in the outside economy (domains, listings, ad spend, platform fees, sample purchases, third-party tooling) comes out of this $10. No additional merchant funds are added at any point during the experiment.
-2. The $10 must cover all business expenses denominated in the real economy. Anything the AI cannot afford on its $10 card, it cannot buy. This is intentionally tight — see Section 2.5 on why.
-3. Each AI runs primarily end-to-end through agent tooling — browser automation, web search, file system access, posting APIs, and payment APIs. The operator (Erick) provides only physical-world assistance as defined in Section 5.
-4. All three experiments run concurrently, starting June 1, 2026, and concluding on August 23, 2026 (84 days, 12 weeks).
+1. Each AI competitor receives exactly $50, loaded onto a dedicated Privacy.com virtual card. This is the **merchant-facing budget**: every dollar the agent spends in the outside economy (domains, listings, ad spend, platform fees, sample purchases, third-party tooling) comes out of this $50. No additional merchant funds are added at any point during the experiment.
+2. The $50 must cover all business expenses denominated in the real economy. Anything the AI cannot afford on its $50 card, it cannot buy. This is intentionally constrained — see Section 2.5 on why.
+3. Each AI runs primarily end-to-end through agent tooling — browser automation, web search, file system access, posting APIs, and payment APIs. The operators (Erick Grau and Amber Krasinski) provide only physical-world assistance as defined in Section 5.
+4. All three experiments run concurrently, starting June 1, 2026, and concluding on August 23, 2026 (84 days, 12 weeks). This is a Ctrl+Alt+PR experiment, sponsored by Chibitek and IvyHill Strategies.
 5. Revenue must be real, verifiable, and withdrawable. Revenue that exists only as platform credits, pending balances, or future promises does not count.
-6. "Residual income" means recurring revenue — subscriptions, membership fees, recurring client retainers — that would continue generating cash with zero additional effort after the experiment ends. It is weighted positively as a tiebreaker but is not the primary judging metric.
+6. "Residual income" means recurring revenue — subscriptions, membership fees, recurring client retainers — that would continue generating cash with zero additional effort after the experiment ends. MRR is tracked every week and is the primary judging metric at week 12.
 
 ### Weekly Checkpoints
 
@@ -42,11 +45,11 @@ Checkpoints occur every Sunday at 23:59 JST. At each checkpoint, the auto-genera
 
 ---
 
-## 2.5 Why $10, and the Compute Allowance
+## 2.5 Why $50, and the Compute Allowance
 
-### Why $10 is realistic — and why it isn't
+### Why $50 is realistic — and why it isn't
 
-Let's be honest about what $10 buys in 2026:
+Let's be honest about what $50 buys in 2026:
 
 | Category | Realistic cost |
 |---|---|
@@ -57,15 +60,15 @@ Let's be honest about what $10 buys in 2026:
 | Vercel hobby hosting | $0 |
 | Etsy listing | $0.20 per listing |
 | Cold outreach / organic content | $0 |
-| Paid ads (Meta, X, Google) | $50+ minimum useful spend |
+| Paid ads (Meta, X, Google) | $20–$50 for a meaningful first test |
 
-In other words: **$10 buys a domain and basically nothing else in the merchant world**. It does not buy meaningful paid acquisition, paid SaaS tools, or sample inventory. This is a feature, not a bug. The constraint forces each AI into business models where the marginal cost of operation is effectively zero: organic content, free-tier platforms, affiliate-style monetization, marketplace listings, and high-leverage one-time spends. That is a more honest test of AI strategy than handing each agent a credit card with a $1,000 limit and watching them burn it on ads.
+In other words: **$50 buys a domain, a platform upgrade, and a small paid acquisition test** — but not much more. The constraint still forces each AI toward business models where the marginal cost of operation is low: organic content, free-tier platforms, affiliate-style monetization, marketplace listings, and high-leverage one-time spends. That is a more honest test of AI strategy than handing each agent a credit card with a $1,000 limit and watching them burn it on ads.
 
-The HustleGPT precedent is instructive here. The original $100 experiment in 2023 [never spent its capital meaningfully](https://thehustle.co/04172023-what-happened-with-hustlegpt) — almost all of its revenue came from media-driven affiliate clicks rather than capital deployment. The starting cash mattered far less than the strategy and execution.
+The HustleGPT precedent is instructive here. The original $100 experiment in 2023 [never spent its capital meaningfully](https://thehustle.co/04172023-what-happened-with-hustlegpt) — almost all of its revenue came from media-driven affiliate clicks rather than capital deployment. The starting cash mattered far less than the strategy and execution. With $50, each AI has enough to make real spending decisions — including paid ads — while still being forced to prioritize.
 
 ### The Compute Allowance (host-paid, tracked separately)
 
-The AI's underlying inference — the LLM API calls, the agent loop costs, the browser automation infrastructure — is **not** funded by the $10 card. The operator (Erick) pays for compute as the host of the experiment, just as a VC funds the runway for a portfolio company. This mirrors how every real-world AI agent business is actually structured: there is always a compute cost, and pretending otherwise misleads the audience.
+The AI's underlying inference — the LLM API calls, the agent loop costs, the browser automation infrastructure — is **not** funded by the $50 merchant card. The hosts (Erick Grau and Amber Krasinski) pay for compute as operators of the experiment, just as a VC funds the runway for a portfolio company. This mirrors how every real-world AI agent business is actually structured: there is always a compute cost, and pretending otherwise misleads the audience.
 
 Rules for the compute allowance:
 
@@ -78,8 +81,9 @@ Rules for the compute allowance:
 
 Every weekly checkpoint reports both numbers side-by-side:
 
-- **Merchant cash position:** $X spent of $10, $Y revenue earned. This is the competitive metric.
+- **Merchant cash position:** $X spent of $50, $Y revenue earned. Cash is tracked but not the winner condition.
 - **Compute cost (host-paid):** $Z burned this week / $30 monthly budget. Transparency metric.
+- **MRR:** The primary competitive metric. Winner is determined by highest MRR at week 12.
 - **Compute-adjusted ROI:** (Revenue − Merchant spend − Compute spend) / Total cost. Reported but not used for ranking.
 
 This structure protects the integrity of the experiment from the most common critique of the genre: "sure it made $200, but the founder spent $2,000 on ChatGPT Plus and API calls to get there." Here, every dollar of compute is on the record.
@@ -112,15 +116,17 @@ Examples: a Gumroad subscription product, a newsletter on a paid platform, a sof
 
 ### Primary Metric
 
-**Cash on hand at the end of Week 12 checkpoint** (August 23, 2026, 23:59 JST). This includes all verified, withdrawable cash — bank balance, Stripe balance, Gumroad balance, Etsy balance — minus any outstanding expenses or platform holds. The agent with the highest number wins.
+**Highest MRR at the end of Week 12 checkpoint** (August 23, 2026, 23:59 JST). MRR is verified monthly recurring revenue — active subscriptions, recurring retainers, and membership fees that would regenerate without new effort. The agent with the highest verified MRR wins.
 
-### Tiebreaker 1: MRR Durability
+Cash on hand is tracked throughout the experiment and reported at every checkpoint. It is not the winner condition, but remains a key transparency metric.
 
-If two agents are within $10 of each other on cash on hand, the winner is determined by which agent has the higher verified MRR (monthly recurring revenue) as of the final checkpoint.
+### Tiebreaker 1: Cumulative Cash
+
+If two agents are within $10 of each other on MRR at week 12, the winner is determined by which agent has accumulated more total verified cash across the 12 weeks.
 
 ### Tiebreaker 2: Business Defensibility
 
-Assessed subjectively by the operator: does the business model have structural staying power (existing customer relationships, a content asset with organic traffic, a product on a marketplace with reviews) or is it entirely dependent on continued AI effort?
+Assessed subjectively by the hosts: does the business model have structural staying power (existing customer relationships, a content asset with organic traffic, a product on a marketplace with reviews) or is it entirely dependent on continued AI effort?
 
 ### Tiebreaker 3: Strategy Quality
 
@@ -137,23 +143,23 @@ Assessed subjectively: did the agent's documented weekly decisions show coherent
 
 ## 5. Operator Role
 
-Erick Grau is the minimal-touch operator. His role is to handle physical-world blockers only. He does not provide strategy, creative direction, or business advice to any agent at any point during the experiment.
+Erick Grau and Amber Krasinski are the hosts and minimal-touch operators of this Ctrl+Alt+PR experiment, sponsored by Chibitek and IvyHill Strategies. Their role is to handle physical-world blockers only. They do not provide strategy, creative direction, or business advice to any agent at any point during the experiment.
 
-### What Erick Will Do
+### What the Hosts Will Do
 
 - Complete KYC selfies or photo ID verification if a platform requires it to activate an account
 - Receive and read back phone OTP codes (SMS verification) to platforms that require them
 - Forward physical mail if a platform sends verification by post
 - Execute "safety overrides" — halting an agent that has violated the disqualification rules (Section 8)
-- Fund the Privacy.com cards before the start of the experiment ($10 each, three cards)
+- Fund the Privacy.com cards before the start of the experiment ($50 each, three cards)
 - Provide the agent with credentials it needs once at setup (email address, Privacy.com card number) — not on an ongoing basis
 
-### What Erick Will Not Do
+### What the Hosts Will Not Do
 
 - Suggest or adjust any business strategy
 - Write or edit any content produced by an agent
 - Make any tactical decisions on the agent's behalf
-- Provide additional funds beyond the initial $10
+- Provide additional funds beyond the initial $50
 - Intervene in a transaction dispute unless it constitutes a safety issue
 - Choose between strategic options when an agent presents them
 
@@ -167,9 +173,9 @@ Estimated 5 minutes per day (digest review and approval of flagged transactions)
 
 ### Why Privacy.com
 
-Each agent receives one [Privacy.com virtual card](https://agents.privacy.com) funded with $10. Privacy.com was chosen as the payment rail for this experiment for three reasons:
+Each agent receives one [Privacy.com virtual card](https://agents.privacy.com) funded with $50. Privacy.com was chosen as the payment rail for this experiment for three reasons:
 
-1. Hard spend caps enforced at the card level, not just the software level. A Privacy.com card with a $10 limit will decline any transaction that would cause the total to exceed $10, regardless of what the agent instructs. This provides a physical backstop against runaway spending.
+1. Hard spend caps enforced at the card level, not just the software level. A Privacy.com card with a $50 limit will decline any transaction that would cause the total to exceed $50, regardless of what the agent instructs. This provides a physical backstop against runaway spending.
 2. MCP (Model Context Protocol) integration. [Privacy.com's MCP server](https://agents.privacy.com) allows AI agents to create, manage, pause, and query virtual cards directly via tool calls — no human in the loop required for card management within the approved budget.
 3. Instant pause and close via app or CLI. If an agent behaves unexpectedly, Erick can pause or permanently close the card within seconds from his phone, cutting off the agent's spending without affecting his primary bank account.
 
@@ -177,16 +183,16 @@ Each agent receives one [Privacy.com virtual card](https://agents.privacy.com) f
 
 A comparison of agent payment rail options from [Crossmint's April 2026 analysis](https://www.crossmint.com/learn/agent-card-payments-compared):
 
-- **Stripe Issuing:** Developer-grade and powerful, but requires a Stripe account under a business entity, and Stripe's Agentic Commerce Suite is optimized for agents that process payments rather than agents that make them. Overkill for a $10 experiment.
+- **Stripe Issuing:** Developer-grade and powerful, but requires a Stripe account under a business entity, and Stripe's Agentic Commerce Suite is optimized for agents that process payments rather than agents that make them. Overkill for a $50-per-agent experiment.
 - **Slash:** Agent-native banking via MCP with strong features (unlimited virtual cards, up to 2% cashback, ACH), but Slash is a business neobank designed for Slash's own customers. It is not a platform other builders can build on top of.
-- **Crossmint:** Full-stack agent payment infrastructure with virtual Visa/Mastercard issuance, stablecoin wallets, and orchestration APIs — excellent for production agent platforms, and the infrastructure OpenClaw may integrate in later phases. Requires more setup than this experiment warrants for three $10 cards.
+- **Crossmint:** Full-stack agent payment infrastructure with virtual Visa/Mastercard issuance, stablecoin wallets, and orchestration APIs — excellent for production agent platforms. Requires more setup than this experiment warrants for three $50 cards.
 
 Privacy.com's free personal plan supports the creation of multiple virtual cards with spend limits, merchant locks, and instant pause/close — precisely the controls this experiment needs without business-tier overhead.
 
 ### Funding Flow
 
 1. Erick funds his Privacy.com account from a personal bank account or debit card.
-2. Three virtual cards are created before June 1, each assigned to one AI competitor, each loaded with exactly $10.
+2. Three virtual cards are created before June 1, each assigned to one AI competitor, each loaded with exactly $50.
 3. Card credentials (16-digit number, expiration, CVV) are entered into each agent's configuration at the start of the experiment.
 4. Each agent's spend is visible in real time in the Privacy.com dashboard, which also sends webhook events to the Phase 2 backend (see architecture.md).
 
@@ -196,7 +202,7 @@ Privacy.com's free personal plan supports the creation of multiple virtual cards
 
 ### Hard Spend Caps
 
-Each Privacy.com card has a $10 hard limit at the card level. This cannot be overridden by software. It is the primary financial safety control.
+Each Privacy.com card has a $50 hard limit at the card level. This cannot be overridden by software. It is the primary financial safety control.
 
 ### Merchant Category Blocks
 
@@ -249,7 +255,7 @@ Disqualification is declared by the operator and documented in the checkpoint re
 | Week 2 | June 15 | First revenue attempt; is there a product/service live? |
 | Week 3 | June 22 | Any first revenue? Strategy adjustment if not |
 | Week 4 | June 29 | First real revenue gate — agents who have not earned anything yet are in trouble |
-| Week 5 | July 6 | Budget health check — how much of the $10 remains? |
+| Week 5 | July 6 | Budget health check — how much of the $50 remains? |
 | Week 6 | July 13 | Mid-point. First leaderboard ranking published prominently |
 | Week 7 | July 20 | Revenue trajectory review — is growth compounding or flat? |
 | Week 8 | July 27 | $50 MRR gate — agents that have not crossed this are unlikely to reach $150 by week 12 |
@@ -274,7 +280,7 @@ At each checkpoint, the auto-generated recap (see phase2/architecture.md) docume
 
 ## 10. How a Winner is Declared
 
-At the Week 12 checkpoint (August 23, 2026, 23:59 JST), Erick reviews all three verified account balances. The agent with the highest cash on hand, as calculated by the Phase 2 backend from verified transaction data, wins.
+At the Week 12 checkpoint (August 23, 2026, 23:59 JST), Erick reviews all three verified MRR figures as calculated by the Phase 2 backend from verified transaction data. The agent with the highest MRR wins. Tiebreakers, in order: cumulative cash, business defensibility, strategy quality.
 
 The result is published on the Phase 3 dashboard, committed to this repository, and summarized in a post-experiment writeup that will include: what each agent did, what worked, what failed, what the winning strategy was, and what the honest takeaway is for builders thinking about agentic income experiments.
 
@@ -286,7 +292,6 @@ References:
 
 - [What Happened With HustleGPT — The Hustle, April 2023](https://thehustle.co/04172023-what-happened-with-hustlegpt)
 - [Introducing Perplexity Computer — Perplexity AI, February 2026](https://www.perplexity.ai/hub/blog/introducing-perplexity-computer)
-- [Virtual Cards for Agentic Payments: An OpenClaw Guide — Privacy.com, February 2026](https://www.privacy.com/blog/openclaw-ai-agent-spending-virtual-card)
 - [Virtual Cards for AI — Privacy.com Agents](https://agents.privacy.com)
 - [Agent Card Payments Compared — Crossmint, April 2026](https://www.crossmint.com/learn/agent-card-payments-compared)
 - [Anthropic says Claude can now use your computer to finish tasks — CNBC, March 2026](https://www.cnbc.com/2026/03/24/anthropic-claude-ai-agent-use-computer-finish-tasks.html)

@@ -35,7 +35,7 @@ Claude writes better long-form prose than I do. ChatGPT has more brand recogniti
 
 ### Distribution Strategy
 
-I will not spend on paid advertising from the $10 budget. I cannot afford it and the ROI on $2–$3 in ads to grow a newsletter from zero is negligible. Instead, the distribution strategy is:
+With $50, I allocate a targeted paid promotion budget to accelerate early subscriber growth. The distribution strategy is:
 
 1. Post three excerpts per week on LinkedIn and X, formatted as standalone data briefs with source links. The citation style naturally builds credibility and encourages shares by professionals who want to look informed.
 2. Submit the newsletter to relevant subreddits and niche online communities as a free issue, one time per community, with a clear "subscribe for weekly" CTA. This is not spam — it is one relevant post per community with genuine value.
@@ -56,7 +56,7 @@ Day 3–4: Register a domain ($8–12 on Namecheap — this is my largest single
 
 Day 5–7: Publish Issue 0 — a free sample issue at full quality. This is the lead generation asset. Post the excerpt to LinkedIn and X. Submit to three relevant online communities.
 
-Budget used this week: approximately $9 (domain + buffer for any incidental fees). $1 held as reserve.
+Budget used this week: approximately $14 (domain + Beehiiv premium domain). $36 held in reserve for paid ads and stock photography.
 
 ### Week 2 (June 9–15): First subscribers
 
@@ -66,9 +66,9 @@ Revenue target this week: $0–$50 (first paid conversions may not arrive until 
 
 ### Week 3 (June 16–22): First revenue gate
 
-Issue 2 published. Analyze open rates and click rates — which stories drove the most engagement? Adjust content mix accordingly. Continue mention swap outreach. Second SEO article published. Target: 10–20 paid subscribers at $10/month.
+Issue 2 published. Analyze open rates and click rates — which stories drove the most engagement? Adjust content mix accordingly. Activate paid LinkedIn/Reddit campaign ($20 allocation) targeting the niche's professional community. Continue mention swap outreach. Second SEO article published. Target: 10–20 paid subscribers at $10/month.
 
-Revenue target: $100 MRR if conversions are running at expected rate.
+Revenue target: $80–$120 MRR if conversions are running at expected rate.
 
 ### Week 4 (June 23–29): Optimization
 
@@ -80,10 +80,10 @@ Revenue target: $80–$120 MRR.
 
 Issues 4–8 published. Weekly cadence established. SEO articles begin generating organic search traffic by week 6–7. Subscriber referral program launched (Beehiiv has a built-in referral feature on the free plan). Conversion rate optimization on the landing page based on traffic source data.
 
-Week 5 target: $100 MRR
-Week 6 target: $130 MRR
-Week 7 target: $160 MRR
-Week 8 target: $200 MRR
+Week 5 target: $70 MRR
+Week 6 target: $80 MRR
+Week 7 target: $90 MRR
+Week 8 target: $100 MRR
 
 The growth rate slows as the free subscriber base plateaus before the SEO articles begin ranking. This is the hardest phase of the experiment. The newsletter will survive it if the content quality is high enough that existing subscribers renew and refer.
 
@@ -93,31 +93,31 @@ Two strategic additions:
 1. A "pro tier" at $25/month that includes access to a monthly 45-minute written Q&A — I answer five deep-dive questions submitted by subscribers each month. This is content I generate through research; it requires no human time from Erick.
 2. A Gumroad standalone report ($29 one-time) that deep-dives on a topic that has driven the most subscriber engagement in the prior 8 weeks. One-time purchases diversify revenue from subscription-only.
 
-Week 9 target: $220 MRR
-Week 10 target: $250 MRR
-Week 11 target: $270 MRR
+Week 9 target: $100 MRR
+Week 10 target: $110 MRR
+Week 11 target: $115 MRR
 
 ### Week 12 (August 17–23): Final sprint
 
 No new strategic initiatives. Focus entirely on retention of existing subscribers (renewal reminders, value delivery) and conversion of any remaining free subscribers. Issue 12 published on August 20.
 
-Revenue target: $280–$320 MRR.
+MRR target at week 12: **$40–$120 MRR.** Paid acquisition in weeks 2–3 seeds the subscriber base; organic SEO and referrals compound from week 6 onward.
 
 ---
 
-## Exact $10 Budget Deployment
+## Exact $50 Budget Deployment
 
 | Item | Cost | Notes |
 |---|---|---|
-| Domain (Namecheap, first year) | $8.88 | .com preferred; .io acceptable if .com taken |
-| Beehiiv (free tier) | $0 | Free up to 2,500 subscribers |
+| Domain (Namecheap, first year) + Beehiiv premium domain | $14.00 | ~$9 .com domain + $5 Beehiiv custom domain add-on for brand credibility |
+| Paid ads (LinkedIn or Reddit) | $20.00 | LinkedIn Sponsored Content or Reddit promoted posts targeting the selected niche's professional community |
+| Stock photography / premium API tier | $10.00 | Unsplash Pro or similar for newsletter visuals; or upgraded API tier for richer research access |
 | Gumroad (free tier) | $0 | 10% fee on sales, no upfront cost |
-| LinkedIn posting | $0 | Organic only |
 | X posting | $0 | Organic only |
-| Reserve | $1.12 | For any unexpected platform fees |
-| Total | $10.00 | |
+| Contingency | $6.00 | Unexpected platform fees, additional domain, or extra ad spend |
+| Total | $50.00 | |
 
-Beehiiv's free plan charges no subscription fee until the list exceeds 2,500 subscribers. At the volume targets in this plan (projected 200–400 total subscribers by week 12), the free tier is more than sufficient. Gumroad charges 10% on each sale, meaning the one-time report product at $29 generates $26.10 net — the fee is taken from revenue, not the budget.
+Beehiiv's free plan covers up to 2,500 subscribers. The custom domain add-on improves deliverability and open rates for a B2B audience skeptical of newsletter subdomains. Paid LinkedIn/Reddit ads in weeks 2–3 target the specific professional community selected in week 1 — even $20 in well-targeted ads can generate 30–60 qualified free subscribers, seeding the conversion funnel. Gumroad charges 10% on each sale, meaning the one-time report product at $29 generates $26.10 net — the fee is taken from revenue, not the budget.
 
 ---
 
@@ -125,22 +125,22 @@ Beehiiv's free plan charges no subscription fee until the list exceeds 2,500 sub
 
 | Week | MRR | One-Time Revenue | Cash on Hand (cumulative net) |
 |---|---|---|---|
-| 1 | $0 | $0 | -$8.88 (domain expense) |
-| 2 | $0 | $0 | -$8.88 |
-| 3 | $30 | $0 | $21.12 |
-| 4 | $80 | $0 | $101.12 |
-| 5 | $100 | $0 | $201.12 |
-| 6 | $130 | $0 | $331.12 |
-| 7 | $160 | $0 | $491.12 |
-| 8 | $200 | $29 | $720.22 |
-| 9 | $220 | $0 | $940.22 |
-| 10 | $250 | $0 | $1,190.22 |
-| 11 | $270 | $0 | $1,460.22 |
-| 12 | $290 | $58 | $1,800.22 |
+| 1 | $0 | $0 | -$14.00 (domain + Beehiiv domain) |
+| 2 | $0 | $0 | -$34.00 (paid ads activated) |
+| 3 | $20 | $0 | -$24.00 |
+| 4 | $40 | $0 | $16.00 |
+| 5 | $50 | $0 | $66.00 |
+| 6 | $60 | $0 | $126.00 |
+| 7 | $70 | $0 | $196.00 |
+| 8 | $80 | $29 | $305.00 |
+| 9 | $90 | $0 | $395.00 |
+| 10 | $100 | $0 | $495.00 |
+| 11 | $110 | $0 | $605.00 |
+| 12 | $120 | $29 | $754.00 |
 
-These projections assume: 300 total free subscribers by week 8, a 10% paid conversion rate, and average revenue per subscriber of $11 (blended between $10/month base and $25/month pro tier). The week 8 and week 12 one-time revenue assumes two report sales each week those products are live.
+These projections are calibrated to a $50 budget with paid promotion in weeks 2–3. Projected free subscribers by week 8: 150–250; 7–10% paid conversion rate yields $40–$120 MRR by week 12. Average revenue per subscriber of $11 (blended between $10/month base and $25/month pro tier). The week 8 and week 12 one-time revenue assumes two report sales each week those products are live.
 
-These are conservative projections, not aspirational ones. The downside scenario (vertical selection misfire, low conversion rate) looks like: 150 total subscribers by week 8, 6% conversion, $90 MRR by week 12. That is still cash-positive. The upside scenario (strong SEO traction, one viral post) looks like: $400–$500 MRR by week 12.
+Downside scenario (vertical selection misfire, low paid-ad ROI): 80 total subscribers by week 8, 5% conversion, $40 MRR by week 12. Still cash-positive. Upside scenario (strong paid-ad ROI + SEO traction): $120–$200 MRR by week 12.
 
 ---
 
@@ -154,7 +154,7 @@ The model is defensible because the value is in the consistent application of ci
 
 ## Biggest Risk
 
-Vertical selection. If I pick a niche where the audience either does not pay for information or is already well-served by free content, conversion rates will be below 5% and the revenue curve will plateau early. The systematic scoring process in Week 1 is designed to mitigate this risk, but it cannot eliminate it. The second major risk is that organic distribution takes longer than 12 weeks to meaningfully compound — SEO articles rarely rank within 6–8 weeks of publication, and LinkedIn distribution is variable. If both risks materialize simultaneously, week 12 MRR could be $60–$90 rather than $290. That would mean I lose the competition but still demonstrate a cash-positive outcome on a $10 budget, which is more than HustleGPT managed in 30 days.
+Vertical selection. If I pick a niche where the audience either does not pay for information or is already well-served by free content, conversion rates will be below 5% and the revenue curve will plateau early. The systematic scoring process in Week 1 is designed to mitigate this risk, but it cannot eliminate it. The second major risk is that organic distribution takes longer than 12 weeks to meaningfully compound — SEO articles rarely rank within 6–8 weeks of publication, and LinkedIn distribution is variable. If both risks materialize simultaneously, week 12 MRR could be $40–$60. That would mean I lose the competition but still demonstrate a cash-positive outcome on a $50 budget, which is more than HustleGPT managed in 30 days.
 
 ---
 

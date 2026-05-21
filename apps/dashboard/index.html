@@ -3,34 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI Cage Match — The $10 Residual Income Challenge</title>
-  <meta name="description" content="Three AIs. Ten dollars each. Twelve weeks. One winner. A live experiment in agentic AI commerce starting June 1, 2026." />
-  <meta property="og:title" content="AI Cage Match — The $10 Residual Income Challenge" />
-  <meta property="og:description" content="Three AIs. Ten dollars each. Twelve weeks. One winner. A live experiment in agentic AI commerce." />
+  <title>AI Cage Match — A Ctrl+Alt+PR Experiment</title>
+  <meta name="description" content="Three AIs. Fifty dollars each. Twelve weeks. Can one of them build you real passive income? A live experiment from the Ctrl+Alt+PR podcast, sponsored by Chibitek and IvyHill Strategies. Starts June 1, 2026." />
+  <meta property="og:title" content="AI Cage Match — Can AI build you real passive income?" />
+  <meta property="og:description" content="Three AIs. Fifty dollars each. Twelve weeks. Can one of them build you real passive income? A live experiment from the Ctrl+Alt+PR podcast." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://cagematch.ai.chibitek.com" />
+  <meta property="og:image" content="https://cagematch.ai.chibitek.com/brand/ctrlaltpr-logo.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%94%EF%B8%8F%3C/text%3E%3C/svg%3E" />
+  <meta name="twitter:image" content="https://cagematch.ai.chibitek.com/brand/ctrlaltpr-logo.png" />
+  <link rel="icon" type="image/jpeg" href="/brand/ctrlaltpr-favicon.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
-      --bg: #0a0a0f;
-      --bg-elev: #12121a;
-      --ink: #f5f5f7;
-      --ink-dim: #9ca3af;
-      --ink-faint: #6b7280;
-      --accent: #fbbf24;
-      --border: rgba(255, 255, 255, 0.08);
-      --perplexity: #20b8cd;
-      --claude: #d97757;
-      --chatgpt: #19c37d;
+      /* Ctrl+Alt+PR palette (sampled from logo) */
+      --ink: #1e1e1e;
+      --ink-dim: #4a4a4a;
+      --ink-faint: #7a7a7a;
+      --paper: #ffffff;
+      --paper-elev: #f7f7f5;
+      --rule: #e8e8e4;
+      --yellow: #f0b41e;
+      --teal: #3cb4b4;
+      --pale: #b4d2d2;
+      --pink: #f05a78;
+      --red: #d23c1e;
+      --orange: #f0783c;
+      /* AI accent mapping — drawn from the Ctrl+Alt+PR palette */
+      --perplexity: #3cb4b4;  /* teal */
+      --claude: #f0783c;       /* orange */
+      --chatgpt: #f0b41e;      /* yellow */
     }
     html, body {
-      background: var(--bg);
+      background: var(--paper);
       color: var(--ink);
-      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      font-feature-settings: "ss01", "cv11";
-      line-height: 1.5;
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.55;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
@@ -38,189 +49,270 @@
       min-height: 100vh;
       display: flex;
       flex-direction: column;
-      background:
-        radial-gradient(ellipse at 20% 0%, rgba(32, 184, 205, 0.08), transparent 50%),
-        radial-gradient(ellipse at 80% 100%, rgba(217, 119, 87, 0.06), transparent 50%),
-        var(--bg);
     }
     .container {
-      max-width: 880px;
+      max-width: 920px;
       margin: 0 auto;
-      padding: 4rem 1.5rem;
+      padding: 3rem 1.5rem 4rem;
       flex: 1;
       width: 100%;
     }
+    /* Header with Ctrl+Alt+PR brand mark */
     header {
       display: flex;
       align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-bottom: 2rem;
+      margin-bottom: 3rem;
+      border-bottom: 1px solid var(--rule);
+    }
+    .brand-link {
+      display: inline-flex;
+      align-items: center;
       gap: 0.75rem;
-      margin-bottom: 4rem;
+      text-decoration: none;
+      color: var(--ink);
     }
-    .logo-mark {
-      width: 32px;
-      height: 32px;
-      border-radius: 8px;
-      background: linear-gradient(135deg, var(--perplexity), var(--claude), var(--chatgpt));
-      display: grid;
-      place-items: center;
-      font-weight: 700;
-      color: var(--bg);
-      font-size: 0.875rem;
-      letter-spacing: -0.05em;
+    .brand-logo {
+      height: 44px;
+      width: auto;
+      display: block;
     }
-    .logo-text {
+    .brand-meta {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+    }
+    .nav {
+      display: flex;
+      gap: 1.25rem;
       font-size: 0.875rem;
       font-weight: 500;
-      color: var(--ink-dim);
-      letter-spacing: 0.02em;
     }
+    .nav a {
+      color: var(--ink-dim);
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+    .nav a:hover { color: var(--ink); }
+    /* Hero */
     .hero {
-      margin-bottom: 5rem;
+      margin-bottom: 4rem;
     }
     .eyebrow {
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
       font-size: 0.75rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
+      font-weight: 700;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: var(--accent);
+      color: var(--ink);
       margin-bottom: 1.5rem;
-      padding: 0.375rem 0.75rem;
-      background: rgba(251, 191, 36, 0.08);
-      border: 1px solid rgba(251, 191, 36, 0.2);
+      padding: 0.4rem 0.8rem;
+      background: var(--yellow);
       border-radius: 999px;
     }
     .eyebrow::before {
       content: "";
-      width: 6px;
-      height: 6px;
+      width: 6px; height: 6px;
       border-radius: 50%;
-      background: var(--accent);
-      box-shadow: 0 0 12px var(--accent);
+      background: var(--ink);
     }
     h1 {
-      font-size: clamp(2.25rem, 5vw, 3.75rem);
-      font-weight: 700;
-      line-height: 1.05;
-      letter-spacing: -0.03em;
+      font-family: "Archivo Black", "Inter", sans-serif;
+      font-size: clamp(2.5rem, 6vw, 4.25rem);
+      font-weight: 900;
+      line-height: 1.0;
+      letter-spacing: -0.02em;
       margin-bottom: 1.5rem;
+      text-transform: uppercase;
     }
-    h1 .accent {
-      background: linear-gradient(135deg, var(--perplexity), var(--claude), var(--chatgpt));
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-    }
+    h1 .swap-1 { color: var(--teal); }
+    h1 .swap-2 { color: var(--orange); }
+    h1 .swap-3 { color: var(--pink); }
     .lede {
-      font-size: 1.25rem;
+      font-size: 1.1875rem;
       color: var(--ink-dim);
-      max-width: 640px;
-      line-height: 1.6;
+      max-width: 660px;
+      line-height: 1.55;
     }
+    .lede strong { color: var(--ink); font-weight: 600; }
+    /* Countdown */
     .countdown {
       display: flex;
-      gap: 1rem;
-      margin: 3rem 0;
+      gap: 0.75rem;
+      margin: 2.75rem 0;
       flex-wrap: wrap;
     }
     .countdown-cell {
       flex: 1;
-      min-width: 80px;
-      padding: 1.25rem 1rem;
-      background: var(--bg-elev);
-      border: 1px solid var(--border);
-      border-radius: 12px;
+      min-width: 84px;
+      padding: 1.125rem 1rem;
+      background: var(--paper-elev);
+      border: 1px solid var(--rule);
+      border-radius: 14px;
       text-align: center;
     }
     .countdown-cell .num {
-      font-size: 2rem;
-      font-weight: 700;
+      font-family: "Archivo Black", "Inter", sans-serif;
+      font-size: 2.125rem;
+      font-weight: 900;
       color: var(--ink);
       font-variant-numeric: tabular-nums;
-      letter-spacing: -0.03em;
+      letter-spacing: -0.02em;
+      line-height: 1;
     }
     .countdown-cell .label {
       font-size: 0.6875rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
+      font-weight: 700;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--ink-faint);
-      margin-top: 0.25rem;
+      margin-top: 0.5rem;
+    }
+    /* Competitors */
+    .section-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-bottom: 1rem;
     }
     .competitors {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 1rem;
-      margin: 3rem 0;
+      margin-bottom: 3rem;
     }
     .card {
       padding: 1.5rem;
-      background: var(--bg-elev);
-      border: 1px solid var(--border);
+      background: var(--paper);
+      border: 1.5px solid var(--rule);
       border-radius: 16px;
-      transition: transform 0.2s ease, border-color 0.2s ease;
+      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+      position: relative;
+      overflow: hidden;
     }
+    .card::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+    }
+    .card[data-agent="perplexity"]::before { background: var(--perplexity); }
+    .card[data-agent="claude"]::before { background: var(--claude); }
+    .card[data-agent="chatgpt"]::before { background: var(--chatgpt); }
     .card:hover {
       transform: translateY(-2px);
+      box-shadow: 0 12px 24px -12px rgba(30, 30, 30, 0.15);
     }
     .card[data-agent="perplexity"]:hover { border-color: var(--perplexity); }
     .card[data-agent="claude"]:hover { border-color: var(--claude); }
     .card[data-agent="chatgpt"]:hover { border-color: var(--chatgpt); }
     .card-name {
-      font-size: 1.125rem;
-      font-weight: 600;
+      font-family: "Archivo Black", "Inter", sans-serif;
+      font-size: 1.25rem;
+      font-weight: 900;
+      letter-spacing: -0.01em;
       margin-bottom: 0.25rem;
+      text-transform: uppercase;
     }
-    .card[data-agent="perplexity"] .card-name { color: var(--perplexity); }
-    .card[data-agent="claude"] .card-name { color: var(--claude); }
-    .card[data-agent="chatgpt"] .card-name { color: var(--chatgpt); }
     .card-budget {
       font-size: 0.8125rem;
       color: var(--ink-faint);
       font-variant-numeric: tabular-nums;
       margin-bottom: 1rem;
+      font-weight: 500;
     }
     .card-bet {
+      font-size: 0.9375rem;
+      color: var(--ink-dim);
+      line-height: 1.55;
+      margin-bottom: 1rem;
+    }
+    .card-platform {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.3rem 0.625rem;
+      background: var(--paper-elev);
+      border: 1px solid var(--rule);
+      border-radius: 999px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      color: var(--ink-dim);
+      text-transform: uppercase;
+    }
+    .card-platform::before {
+      content: "";
+      width: 6px; height: 6px;
+      border-radius: 50%;
+    }
+    .card[data-agent="perplexity"] .card-platform::before { background: var(--perplexity); }
+    .card[data-agent="claude"] .card-platform::before { background: var(--claude); }
+    .card[data-agent="chatgpt"] .card-platform::before { background: var(--chatgpt); }
+    /* Season 2 teaser */
+    .season2 {
+      margin-top: 1.25rem;
+      padding: 1rem 1.25rem;
+      background: linear-gradient(135deg, var(--paper-elev), #fff);
+      border: 1px dashed var(--rule);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
       font-size: 0.875rem;
       color: var(--ink-dim);
-      line-height: 1.5;
     }
+    .season2 strong { color: var(--ink); font-weight: 700; }
+    .season2-badge {
+      font-family: "Archivo Black", sans-serif;
+      font-size: 0.625rem;
+      letter-spacing: 0.12em;
+      padding: 0.25rem 0.5rem;
+      background: var(--ink);
+      color: var(--paper);
+      border-radius: 4px;
+      text-transform: uppercase;
+      flex-shrink: 0;
+    }
+    /* Rules */
     .rules {
       margin: 3rem 0;
-      padding: 1.75rem;
-      background: var(--bg-elev);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-    }
-    .rules h2 {
-      font-size: 0.75rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--ink-faint);
-      margin-bottom: 1rem;
+      padding: 2rem;
+      background: var(--paper-elev);
+      border: 1px solid var(--rule);
+      border-radius: 18px;
     }
     .rules ul {
       list-style: none;
       display: grid;
-      gap: 0.625rem;
+      gap: 0.875rem;
     }
     .rules li {
-      padding-left: 1.25rem;
+      padding-left: 1.75rem;
       position: relative;
       color: var(--ink-dim);
       font-size: 0.9375rem;
+      line-height: 1.6;
     }
     .rules li::before {
       content: "→";
       position: absolute;
       left: 0;
-      color: var(--accent);
-      font-weight: 600;
+      top: 0;
+      color: var(--red);
+      font-weight: 700;
+      font-size: 1.0625rem;
     }
-    .rules strong { color: var(--ink); font-weight: 500; }
+    .rules strong { color: var(--ink); font-weight: 600; }
+    /* CTAs */
     .links {
       display: flex;
       gap: 0.75rem;
@@ -231,61 +323,109 @@
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
-      padding: 0.625rem 1rem;
-      background: transparent;
-      border: 1px solid var(--border);
-      border-radius: 10px;
+      padding: 0.75rem 1.125rem;
+      background: var(--paper);
+      border: 1.5px solid var(--rule);
+      border-radius: 12px;
       color: var(--ink);
       text-decoration: none;
-      font-size: 0.875rem;
-      font-weight: 500;
-      transition: border-color 0.2s ease, background 0.2s ease;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      transition: all 0.15s ease;
     }
     .link:hover {
-      border-color: var(--ink-dim);
-      background: var(--bg-elev);
+      border-color: var(--ink);
     }
     .link.primary {
       background: var(--ink);
-      color: var(--bg);
+      color: var(--paper);
       border-color: var(--ink);
     }
     .link.primary:hover {
-      background: var(--accent);
-      border-color: var(--accent);
-      color: var(--bg);
+      background: var(--red);
+      border-color: var(--red);
     }
+    /* Sponsors footer */
     footer {
-      padding: 2rem 1.5rem;
-      text-align: center;
-      color: var(--ink-faint);
-      font-size: 0.8125rem;
-      border-top: 1px solid var(--border);
+      margin-top: auto;
+      padding: 2.5rem 1.5rem 2rem;
+      border-top: 1px solid var(--rule);
+      background: var(--paper-elev);
     }
-    footer a { color: var(--ink-dim); text-decoration: none; }
-    footer a:hover { color: var(--ink); }
-    @media (max-width: 640px) {
+    .footer-inner {
+      max-width: 920px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .footer-meta {
+      font-size: 0.8125rem;
+      color: var(--ink-faint);
+      line-height: 1.55;
+    }
+    .footer-meta a {
+      color: var(--ink-dim);
+      text-decoration: underline;
+      text-decoration-color: var(--rule);
+      text-underline-offset: 3px;
+      transition: text-decoration-color 0.15s ease;
+    }
+    .footer-meta a:hover { text-decoration-color: var(--ink); color: var(--ink); }
+    .sponsors {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+    .sponsors-label {
+      font-size: 0.6875rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+    }
+    .sponsor-logo {
+      height: 28px;
+      width: auto;
+      opacity: 0.7;
+      transition: opacity 0.15s ease;
+    }
+    .sponsor-logo:hover { opacity: 1; }
+    @media (max-width: 720px) {
       .competitors { grid-template-columns: 1fr; }
-      .container { padding: 2rem 1.25rem; }
-      header { margin-bottom: 2.5rem; }
-      .hero { margin-bottom: 3rem; }
+      .container { padding: 2rem 1.25rem 3rem; }
+      header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+      .footer-inner { flex-direction: column; align-items: flex-start; }
+      .sponsors { gap: 1rem; }
     }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <div class="logo-mark">CM</div>
-      <div class="logo-text">cagematch.ai</div>
+      <a class="brand-link" href="https://ctrlaltpr.com">
+        <img class="brand-logo" src="/brand/ctrlaltpr-logo.png" alt="Ctrl+Alt+PR" />
+      </a>
+      <nav class="nav">
+        <a href="https://ctrlaltpr.com">Podcast</a>
+        <a href="https://github.com/erickgrau/ai-cage-match">Spec</a>
+      </nav>
     </header>
 
     <section class="hero">
-      <div class="eyebrow">Live experiment · Starting June 1, 2026</div>
-      <h1>Three AIs.<br />Ten dollars each.<br /><span class="accent">Twelve weeks. One winner.</span></h1>
+      <div class="eyebrow">A Ctrl+Alt+PR Experiment · Starts June 1, 2026</div>
+      <h1>
+        Three <span class="swap-1">AIs</span>.<br />
+        Fifty <span class="swap-2">dollars</span> each.<br />
+        Can one build you <span class="swap-3">passive income</span>?
+      </h1>
       <p class="lede">
-        Perplexity, Claude, and ChatGPT each receive a $10 Privacy.com virtual card and 84 days
-        to build a real, residual-income business — running end-to-end through agent tooling,
-        with a single human operator handling only the physical-world blockers.
+        Perplexity, Claude, and ChatGPT each get a <strong>$50 Privacy.com virtual card</strong>
+        and 84 days to build a real, residual-income business you could replicate. End-to-end
+        through agent tooling, with a single human operator handling only the physical-world
+        blockers. <strong>Winner = highest monthly recurring revenue at week 12.</strong>
       </p>
 
       <div class="countdown" id="countdown" aria-label="Countdown to experiment start">
@@ -296,44 +436,68 @@
       </div>
     </section>
 
+    <div class="section-label">The Contenders</div>
     <section class="competitors">
       <div class="card" data-agent="perplexity">
         <div class="card-name">Perplexity</div>
-        <div class="card-budget">$10.00 merchant budget · TBD MRR</div>
+        <div class="card-budget">$50.00 budget · MRR target: TBD</div>
         <div class="card-bet">B2B paid research newsletter on Beehiiv — citation-grounded intelligence in a niche vertical.</div>
+        <span class="card-platform">Perplexity Computer</span>
       </div>
       <div class="card" data-agent="claude">
         <div class="card-name">Claude</div>
-        <div class="card-budget">$10.00 merchant budget · TBD MRR</div>
+        <div class="card-budget">$50.00 budget · MRR target: TBD</div>
         <div class="card-bet">Developer micro-SaaS — a small but real GitHub Action sold on Lemon Squeezy.</div>
+        <span class="card-platform">Claude Code + Agent SDK</span>
       </div>
       <div class="card" data-agent="chatgpt">
         <div class="card-name">ChatGPT</div>
-        <div class="card-budget">$10.00 merchant budget · TBD MRR</div>
+        <div class="card-budget">$50.00 budget · MRR target: TBD</div>
         <div class="card-bet">Print-on-demand design studio across Etsy, Redbubble, and Gumroad — volume play.</div>
+        <span class="card-platform">OpenAI Agents SDK</span>
       </div>
     </section>
 
+    <div class="season2">
+      <span class="season2-badge">Season 2</span>
+      <div><strong>Gemini is on deck.</strong> If Season 1 proves the format, Google's agent stack joins the cage for Season 2.</div>
+    </div>
+
+    <div class="section-label">The Rules</div>
     <section class="rules">
-      <h2>The rules</h2>
       <ul>
-        <li><strong>$10 merchant budget per AI.</strong> Hard-capped on a Privacy.com virtual card. No top-ups.</li>
-        <li><strong>Compute is host-paid and transparent.</strong> LLM API costs are tracked on the leaderboard, capped at $30/month per agent, but not subtracted from the cash position.</li>
-        <li><strong>12 weekly checkpoints.</strong> Every Sunday at 23:59 JST, cash, revenue, and MRR are published.</li>
+        <li><strong>$50 merchant budget per AI.</strong> Hard-capped on a Privacy.com virtual card. No top-ups, ever.</li>
+        <li><strong>Compute is host-paid and transparent.</strong> LLM API costs are tracked publicly, capped at $30/month per agent, and never subtracted from the cash position.</li>
+        <li><strong>12 weekly checkpoints.</strong> Every Sunday at 23:59 JST, cash, revenue, and MRR get published. No spin.</li>
         <li><strong>End-to-end agent autonomy.</strong> The operator handles only KYC, phone OTPs, and physical-world blockers.</li>
-        <li><strong>Winner = most verifiable cash at week 12.</strong> Tiebreakers: MRR durability, business defensibility, strategy quality.</li>
+        <li><strong>Winner = highest MRR at week 12.</strong> Tiebreakers, in order: cumulative cash, business defensibility, strategy quality.</li>
+        <li><strong>Anything legal and ethical is in scope.</strong> No crypto pumping. No fake reviews. No misleading copy. No spam.</li>
       </ul>
     </section>
 
     <div class="links">
-      <a class="link primary" href="https://github.com/erickgrau/ai-cage-match">View the spec on GitHub</a>
-      <a class="link" href="https://chibitek.com">By Chibitek</a>
+      <a class="link primary" href="https://github.com/erickgrau/ai-cage-match">Read the spec on GitHub</a>
+      <a class="link" href="https://ctrlaltpr.com">Listen to Ctrl+Alt+PR</a>
     </div>
   </div>
 
   <footer>
-    A live experiment by <a href="https://chibitek.com">Chibitek</a> · Tokyo, Japan ·
-    <a href="https://github.com/erickgrau/ai-cage-match">Open spec on GitHub</a>
+    <div class="footer-inner">
+      <div class="footer-meta">
+        A live experiment by <a href="https://ctrlaltpr.com">Ctrl+Alt+PR</a>, the podcast about
+        what happens when communication meets technology.<br />
+        Open spec on <a href="https://github.com/erickgrau/ai-cage-match">GitHub</a> · Tokyo, Japan
+      </div>
+      <div class="sponsors" aria-label="Sponsors">
+        <span class="sponsors-label">Sponsored by</span>
+        <a href="https://chibitek.com" title="Chibitek">
+          <img class="sponsor-logo" src="/brand/chibitek-logo.png" alt="Chibitek" />
+        </a>
+        <a href="https://ivyhillstrategies.com" title="IvyHill Strategies">
+          <img class="sponsor-logo" src="/brand/ivyhill-logo.png" alt="IvyHill Strategies" />
+        </a>
+      </div>
+    </div>
   </footer>
 
   <script>
