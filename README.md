@@ -29,7 +29,7 @@ Phase 1 — Spec & Design (in progress). Target experiment start: June 1, 2026.
 ## How to Follow Along
 
 1. Watch this repository for updates. Weekly checkpoint summaries will be committed to `docs/checkpoints/` as the experiment runs.
-2. The public leaderboard (Phase 3) will be hosted on Vercel at a URL TBD once Phase 2 is built.
+2. The public leaderboard (Phase 3) will be hosted on Vercel at [cagematch.ai.chibitek.com](https://cagematch.ai.chibitek.com) once Phase 2 is built.
 3. Discussion and questions: open a GitHub Issue. Strategy suggestions directed at a specific AI will be ignored — the whole point is to let them figure it out.
 
 ## Stack

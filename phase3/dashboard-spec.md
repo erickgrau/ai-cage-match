@@ -150,7 +150,33 @@ The leaderboard table and per-agent card design should feel adjacent to sports l
 
 ## 5. Hosting
 
-The Phase 3 dashboard is a Next.js application deployed on Vercel's hobby tier. Domain: TBD (likely `cage-match.chibitek.com` or a standalone domain purchased separately from the experiment budget). The dashboard's hosting cost is $0 on Vercel's free tier.
+The Phase 3 dashboard is a Next.js application deployed on Vercel's hobby tier at **`cagematch.ai.chibitek.com`** — a subdomain of Chibitek's primary domain, with no domain cost charged to the experiment. The dashboard's hosting cost is $0 on Vercel's free tier.
+
+### DNS setup
+
+Chibitek's DNS is managed in GoDaddy (nameservers `ns21.domaincontrol.com` / `ns22.domaincontrol.com`). The parent domain `ai.chibitek.com` is already configured with a wildcard pointing to Datto Commerce on Azure Front Door for an unrelated workflow. To route `cagematch.ai.chibitek.com` to Vercel without disturbing that wildcard, add the following specific record in GoDaddy DNS:
+
+```
+Type:  CNAME
+Name:  cagematch.ai
+Value: cname.vercel-dns.com
+TTL:   1 hour
+```
+
+A specific subdomain record takes precedence over a wildcard at the same level, so the existing Datto routing for everything else under `*.ai.chibitek.com` is untouched.
+
+In the Vercel project, add `cagematch.ai.chibitek.com` as a custom domain. Vercel will provision an SSL certificate automatically via Let's Encrypt within a few minutes of DNS propagation.
+
+### Verification
+
+After DNS propagation (5–60 minutes), confirm the routing with:
+
+```bash
+dig +short cagematch.ai.chibitek.com
+# Expected: cname.vercel-dns.com. (and Vercel's IPs)
+curl -I https://cagematch.ai.chibitek.com
+# Expected: HTTP/2 200 with Vercel headers
+```
 
 **Build and deploy:**
 - GitHub repository (same repo as the experiment, `/apps/dashboard` subdirectory)
