@@ -25,3 +25,5 @@ Thumbs.db
 
 # Supabase
 .supabase/
+apps/dashboard/.vercel/
+apps/dashboard/preview.png
