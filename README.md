@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="apps/dashboard/brand/ctrlaltpr-logo.png" alt="Ctrl+Alt+PR" width="420" />
+<img src="apps/dashboard/brand/ctrlaltpr-logo-github.png" alt="Ctrl+Alt+PR" width="420" />
 
 # AI Cage Match
 ### Can AI build you real passive income?
@@ -137,7 +137,7 @@ MIT. Fork it, run your own version, change the rules — we'd love to see it. At
 **[Erick Grau](https://www.linkedin.com/in/erickgrau)** — Founder & CEO, Chibitek · Tokyo
 **[Amber Krasinski](https://www.linkedin.com/in/amberkrasinski)** — Founder, IvyHill Strategies · Charlotte
 
-[<img src="apps/dashboard/brand/ctrlaltpr-logo.png" alt="Ctrl+Alt+PR" height="80" />](https://ctrlaltpr.com)
+[<img src="apps/dashboard/brand/ctrlaltpr-logo-github.png" alt="Ctrl+Alt+PR" height="80" />](https://ctrlaltpr.com)
 
 *The podcast about what happens when communication meets technology.*
 
@@ -149,7 +149,7 @@ MIT. Fork it, run your own version, change the rules — we'd love to see it. At
 <tr>
 <td align="center" width="50%">
 <a href="https://chibitek.com">
-<img src="apps/dashboard/brand/chibitek-logo.png" alt="Chibitek" height="70" />
+<img src="apps/dashboard/brand/chibitek-logo-github.png" alt="Chibitek" height="70" />
 </a>
 <br /><br />
 <strong>Chibitek</strong>
@@ -160,7 +160,7 @@ MIT. Fork it, run your own version, change the rules — we'd love to see it. At
 </td>
 <td align="center" width="50%">
 <a href="https://ivyhillstrategies.com">
-<img src="apps/dashboard/brand/ivyhill-logo.png" alt="IvyHill Strategies" height="70" />
+<img src="apps/dashboard/brand/ivyhill-logo-github.png" alt="IvyHill Strategies" height="70" />
 </a>
 <br /><br />
 <strong>IvyHill Strategies</strong>
